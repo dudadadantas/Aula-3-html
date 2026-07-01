@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda e Esporte</title>
+</head>
+<body>
+    <h1>Formulário de estilo e esporte</h1>
+    <p>Responda para ajudar no mapeamento de tendências urbanas</p>
+    <p>
+        <a href="index.html">🏡 Inicio/Textos</a> |
+        <a href="cultura.html">🍳 Música e Culinária</a> |
+        <a href="estilo.html">👔 Moda e Esporte</a> 
+    </p>
+    <hr>
+
+
+    <form oninput="resultadoNota.value=notaEstilo.value">
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex. Dahmer">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ex. Dahmer@example.com">
+        </p>
+        <p>
+            <label for="data-Nasc">Data de Nascimento:</label>
+            <input type="date" id="data-Nasc" name="data-Nasc">
+        </p>
+        <p>
+            <label> Quais esportes e lazer você pratica?(marcar quantos quiser)</label> <br>
+            <input type="checkbox" id="esp1" name="esportes" value="futebol">
+            <label for="esp1">Futebol de Várzea/Quadra</label> <br>
+            <input type="checkbox" id="esp2" name="esportes" value="skate">
+            <label for="esp2">Skate / Patins </label> <br>
+            <input type="checkbox" id="esp3" name="esportes" value="basquete">
+            <label for="esp3">Basquete de Rua</label> <br>
+            <input type="checkbox" id="esp4" name="esportes" value="tenis">
+            <label for="esp4">Tenis / Tenis de mesa</label> <br>
+            <input type="checkbox" id="esp5" name="esportes" value="natação">
+            <label for="esp5">Natação</label> <br>
+            <input type="checkbox" id="esp6" name="esportes" value="boxe">
+            <label for="esp6">Boxe</label> <br>
+            <input type="checkbox" id="esp7" name="esportes" value="vôlei">
+            <label for="esp7">Vôlei</label> <br>
+        </p>
+
+        <p>
+            <label for="marca">Qual a marca que você mais gosta?</label> <br>
+            <input list="marcas" id="marca" name="marca" placeholder="Selecione ou digite...">
+            <datalist id="marcas">
+                <option value="Nike"> 
+                <option value="Adidas"> 
+                <option value="Puma"> 
+                <option value="Renner"> 
+                <option value="C&A"> 
+                <option value="Hering"> 
+                <option value="Pernambucanas"> 
+                <option value="Vans"> 
+                <option value="Converse"> 
+                <option value="Lilica Ripilica"> 
+                <option value="Marisa"> 
+                <option value="Melissa"> 
+                <option value="Sal e Pimenta"> 
+                <option value="Planet girls"> 
+            </datalist>
+        </p>
+        <p>
+            <label for="instituicao"> Onde você foca seus estudos atualmente?</label><br>
+            <select id="instituicao" name="instituicao">
+                <optgroup label="Ensino técnico regular">
+                    <option value="Escola-publlica">Escola Estadual</option>
+                    <option value="Escola-privada">Escola Particular</option>
+                </optgroup>
+                <optgroup label="Ensino superior">
+                    <option value="Faculdade-publica">Faculdade Pública</option>
+                    <option value="Faculdade-privada">Faculdade Particular</option>
+                </optgroup>
+                <optgroup label="Cursos">
+                    <option value="Curso">Curso inglês</option>
+                    <option value="Curso">Curso de informática</option>
+                    <option value="Curso">Curso de música</option>
+                    <option value="Curso">Curso de dança</option>
+                </optgroup> 
+                <optgroup label="Ensino médio">
+                    <option value="Ensino-medio-1">Ensino Médio 1° ano</option>
+                    <option value="Ensino-medio-2">Ensino Médio 2° ano</option>
+                    <option value="Ensino-medio-3">Ensino Médio 3° ano</option>
+                </optgroup>
+                <optgroup label="Não estudo">
+                    <option value="Nao-estudo">Não estudo</option>
+                </optgroup>
+            </select>
+
+        </p>
+    </form>
+</body>
+</html>
